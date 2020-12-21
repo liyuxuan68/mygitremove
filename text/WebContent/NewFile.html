@@ -1,0 +1,33 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+#div{
+width:200px;
+heigth:200px;
+background:red;
+}
+</style>
+<script>
+function togreen(){
+	document.getElementById("div").style.width='300px';
+	document.getElementById("div").style.heigth='300px';
+	document.getElementById("div").style.background='green';
+}
+function tored(){
+	document.getElementById("div").style.width='200px';
+	document.getElementById("div").style.heigth='200px';
+	document.getElementById("div").style.background='red';
+}
+</script>
+
+
+</head>
+<body>
+<div id="div" onmouseover="togreen()" onmouseout="tored()"></div>
+
+</body>
+</html>

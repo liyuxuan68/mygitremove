@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>表单验证</title>
+<script type="text/javascript" src="verity.js">
+</script>
+</head>
+<body>
+<form name="myform" method="post" action="">
+用户名*：<input type="text" name="txtname" size=12 maxlength=6 onBlur="verify()">
+<font id="titleNull" style="color:red;display:none">*姓名不能为空</font><p>
+年龄*：<input type="text" name="number" size=12 maxlength=3 onBlur="verify()">
+<font id="number1" style="color:red;display:none">*年龄不能小于17岁</font><p>
+密码*：<input type="password" name="password" size=12 maxlength=12 onBlur="verify()">
+<font id="password1" style="color:red;display:none">*密码小于8个字符</font><p>
+确认密码*：<input type="password" name="pass" size=12 maxlength=12 onBlur="verify()">
+<font id="pass1" style="color:red;display:none">*两次密码不一致</font><p>
+电子邮件*：<input type="text" name="email" size=12 maxlength=12 onBlur="verify()">
+<font id="email1" style="color:red;display:none">*电子邮件名非法</font><p>
+电话：<input type="text" name="telephone" size=12 maxlength=11><p>
+个人简历：<p><textarea rows="4" cols="50"></textarea><p>
+<input type="submit" name="submit" value="提交查询内容">
+<input type="reset" name="reset" value="重置">
+</form>
+</body>
+</html>

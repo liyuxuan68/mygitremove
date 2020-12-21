@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<HTML>
+ <HEAD>
+ <meta charset="UTF-8">
+  <TITLE> 问卷调查 </TITLE>
+	<style type="text/css">
+          h1 {background-color: #00ff00;text-align:center}
+	  div {width:500px;border: 2px solid ;padding:10px;}
+          span {position:absolute;left:50%;margin-left:-250px;}
+	 .active{
+	 border-color:red;
+	 font-weigth:bold;}
+   </style>
+  <script>
+  function moveover(id){
+      var d = document.getElementById(id);
+      d.className="active";
+    }
+  function moveout(id){
+      var d= document.getElementById(id);
+      d.className="";
+    }
+
+ </script>
+
+ </HEAD>
+
+ <BODY>
+  <h1>高校"阳光体育"开展情况调查表</h1>
+<form name="question" id="question">
+  <div id="1" onMouseOver="moveover(1)" onMouseOut="moveout(1)">
+     1.您每周锻炼次数是:<br>
+<input type="radio" name="num" value="one" /> 1次
+<br />
+<input type="radio" name="num" value="two" /> 2次
+<br />
+<input type="radio" name="num" value="three" /> 3次
+<br />
+<input type="radio" name="num" value="threeover" /> 3次以上
+</div>
+<br />
+  <div id="2" onMouseOver="moveover(2)" onMouseOut="moveout(2)">
+     2.您平均每次锻炼时间是:<br>
+<input type="radio" name="time" value="thirty" /> 30分钟以内
+<br />
+<input type="radio" name="time" value="sixty" /> 30分钟-60分钟
+<br />
+<input type="radio" name="time" value="ninty" /> 60分钟-90分钟
+<br />
+<input type="radio" name="time" value="nintyover" /> 90分钟以上
+</div>
+
+</form>
+
+ </BODY>
+</HTML>

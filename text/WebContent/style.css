@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.style1{
+	font-family:隶书;
+	font-size:25px;
+	font-weight:blod;
+	text-indent: 1cm;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+.style{
+	position:absolute;
+	left:150px;
+	text-indent: 1cm;
+	width:600px;
+	heigth:150px;
+	color:blue;
+	border-style: dotted;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	border-color: blue;
+}
+.h1{
+	text-align:center;
+	color:red;
+}
